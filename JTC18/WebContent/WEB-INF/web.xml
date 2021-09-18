@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+	<display-name>JTC18</display-name>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<servlet-name>SearchBooks</servlet-name>
+		<servlet-class>com.jtcindia.servlets.SearchBookServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SearchBooks</servlet-name>
+		<url-pattern>/searchbooks.jtc</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>addToCartServlet</servlet-name>
+		<servlet-class>com.jtcindia.servlets.AddToCartServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>addToCartServlet</servlet-name>
+		<url-pattern>/addtocart.jtc</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>showCartServlet</servlet-name>
+		<servlet-class>com.jtcindia.servlets.ShowCartServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>showCartServlet</servlet-name>
+		<url-pattern>/showcart.jtc</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>removeFormCart</servlet-name>
+		<servlet-class>com.jtcindia.servlets.RemoveFromCartServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>removeFormCart</servlet-name>
+		<url-pattern>/removeformcart.jtc</url-pattern>
+	</servlet-mapping>
+</web-app>
